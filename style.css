@@ -1,0 +1,96 @@
+
+body{
+  background-color: #f2f5f8;
+}
+.title{
+  text-align: center;
+}
+.underline{
+  width: 100px;
+  height: 4px;
+  background-color: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2, h3, h4{
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.menu-item {
+  display: grid;
+}
+.photo {
+  object-fit: cover;
+  height: 200px;
+  width: 230px;
+  border: 3px solid #c59d5f;
+  border-radius: 10px;
+}
+.item-info header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.25px dotted #617c98;
+}
+.btn-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; 
+  margin-top: 10px;
+}
+.filter-btn{
+  background-color: transparent;
+  border: 1.5px solid #c59d5f;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #c59d5f;
+  margin: 10px;
+  cursor: pointer;
+  transition: 
+}
+
+.filter-btn:hover {
+  color: white;
+  background: #c59d5f;
+  transition-duration: 1s;
+}
+.item-info h4 {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.item-text {
+  margin-bottom: 0;
+  padding-top: 5px;
+  color: #657f9c;
+}
+/*螢幕畫面超過768時的展示*/
+@media screen and (min-width: 768px) { 
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
